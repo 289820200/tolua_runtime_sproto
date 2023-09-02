@@ -21,6 +21,8 @@ gcc -m64 -O2 -std=gnu99 -shared \
  cjson/strbuf.c \
  cjson/lua_cjson.c \
  cjson/fpconv.c \
+ sproto/lsproto.c \
+ sproto/sproto.c \
  luasocket/auxiliar.c \
  luasocket/buffer.c \
  luasocket/except.c \
@@ -37,6 +39,7 @@ gcc -m64 -O2 -std=gnu99 -shared \
  -o Plugins/x86_64/tolua.dll \
  -I./ \
  -Iluajit-2.1/src \
+ -Isproto \
  -Iluasocket \
  -lws2_32 \
  -Wl,--whole-archive window/x86_64/libluajit.a -Wl,--no-whole-archive -static-libgcc -static-libstdc++

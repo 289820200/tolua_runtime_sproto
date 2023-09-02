@@ -21,6 +21,8 @@ gcc -m32 -O2 -std=gnu99 -shared \
 	cjson/strbuf.c \
 	cjson/lua_cjson.c \
 	cjson/fpconv.c \
+	sproto/lsproto.c \
+	sproto/sproto.c \
 	luasocket/auxiliar.c \
 	luasocket/buffer.c \
 	luasocket/except.c \
@@ -38,6 +40,7 @@ gcc -m32 -O2 -std=gnu99 -shared \
 	-I./ \
 	-Iluajit-2.1/src \
 	-Icjson \
+	-Isproto \
 	-Iluasocket \
 	-lws2_32 \
 	-Wl,--whole-archive window/x86/libluajit.a -Wl,--no-whole-archive -static-libgcc -static-libstdc++
