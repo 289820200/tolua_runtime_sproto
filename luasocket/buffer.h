@@ -17,7 +17,7 @@
 \*=========================================================================*/
 #include "lua.h"
 
-#include "io.h"
+#include "myio.h"
 #include "timeout.h"
 
 /* buffer size in bytes */
